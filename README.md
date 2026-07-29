@@ -107,9 +107,31 @@ The **Advanced Resume Skill Gap Analyzer** is a full‑stack web application tha
 ---
 
 ## 📁 Project Structure
-backend
-frontend
-
+project/
+├── backend/
+│   ├── src/
+│   │   ├── config/          # Environment & DB configs
+│   │   ├── controllers/     # Route handlers
+│   │   ├── models/          # MongoDB models
+│   │   ├── routes/          # API routes
+│   │   ├── middleware/      # Auth, upload, error handling
+│   │   ├── services/        # Business logic
+│   │   ├── utils/           # Helpers, constants, logger
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── uploads/             # Resume storage
+│   └── package.json
+│
+└── frontend/
+    ├── src/
+    │   ├── components/      # React components
+    │   ├── context/         # React Context providers
+    │   ├── hooks/           # Custom hooks
+    │   ├── services/        # API services
+    │   ├── styles/          # Global CSS
+    │   ├── App.jsx
+    │   └── main.jsx
+    └── package.json
 
 
 ---
